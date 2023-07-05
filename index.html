@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <!-- ----------------------------
+        ESTILO CSS NA MESMA PAGINA 
+    ---------------------------------->
+    <style type="text/css">
+
+        /*---------------------------- 
+        CONFIGURAÇÃO DA PAGINA 
+        -------------------------------*/
+        body, html {
+            margin: 0;
+            font: 16px "lato", sans-serif;
+            color: #777;
+            height: 100%;
+            border: solid red 1px;
+        }
+
+        .conteudo {
+            color: #777;
+            background-color: white;
+            text-align: justify;
+            padding: 50px 80px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            color: #111;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* ------------------------
+        EFEITOS PARALLAX 
+        ---------------------------*/
+        .caixa1, .caixa2, .caixa3, .caixa4 {
+            position: relative;
+            height: 100%;
+            opacity: 0.7;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .caixa1 {
+            background-image: url(../parallax/imagens/imagem1.jpg);
+        }
+
+        .caixa2 {
+            background-image: url(../parallax/imagens/imagem2.jpg);
+        }
+
+        .caixa3 {
+            background-image: url(../parallax/imagens/imagem3.jpg);
+        }
+
+        .caixa4 {
+            background-image: url(../parallax/imagens/imagem4.jpg);
+        }
+
+        .conteudo-titulo {
+            position: absolute;
+            left: 50%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="caixa1">
+        <div class="conteudo-titulo">
+            conteudo 1
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Parallax</h3> 
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum et porro Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci asperiores cum accusantium corrupti! Veritatis sequi autem, exercitationem eum mollitia quaerat quae rerum est, tempore minus facilis earum velit. Quam, consequuntur. facilis suscipit dignissimos, minus nobis dolores omnis aperiam blanditiis autem ipsum repudiandae exercitationem nihil earum, quibusdam quis velit animi.
+        </p>   
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum et porro Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci asperiores cum accusantium corrupti! Veritatis sequi autem, exercitationem eum mollitia quaerat quae rerum est, tempore minus facilis earum velit. Quam, consequuntur. facilis suscipit dignissimos, minus nobis dolores omnis aperiam blanditiis autem ipsum repudiandae exercitationem nihil earum, quibusdam quis velit animi.
+        </p>        
+    </div>
+
+    <div class="caixa2">
+        Caixa 2
+    </div>
+
+    <div class="conteudo">
+        <h3>Parallax</h3> 
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum et porro Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci asperiores cum accusantium corrupti! Veritatis sequi autem, exercitationem eum mollitia quaerat quae rerum est, tempore minus facilis earum velit. Quam, consequuntur. facilis suscipit dignissimos, minus nobis dolores omnis aperiam blanditiis autem ipsum repudiandae exercitationem nihil earum, quibusdam quis velit animi.
+        </p>   
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum et porro Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci asperiores cum accusantium corrupti! Veritatis sequi autem, exercitationem eum mollitia quaerat quae rerum est, tempore minus facilis earum velit. Quam, consequuntur. facilis suscipit dignissimos, minus nobis dolores omnis aperiam blanditiis autem ipsum repudiandae exercitationem nihil earum, quibusdam quis velit animi.
+        </p>        
+    </div>
+
+    <div class="caixa3">
+        Caixa 3
+    </div>
+
+    <div class="caixa4">
+        Caixa 4
+    </div>
+    
+</body>
+</html>
